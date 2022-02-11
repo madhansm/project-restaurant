@@ -1,6 +1,11 @@
 import './style.css';
-import './logo.png'
-import './landing-page.js'
+
+import contentEl from './landing-page.js';
+import landingTabEl from './landing-tab.js';
+import beersTabEl from './beers-tab.js';
 
 
-console.log("index page executed")
+
+
+contentEl.appendChild(beersTabEl);
+console.log("index page executed");
