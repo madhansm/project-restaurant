@@ -16,7 +16,7 @@ menuEl.appendChild(logoEl);
 //list of buttons/tabs to be displayed in the menu
 
 //add new tabs here in the array below
-let tabsList = ["BEERS", "FOOD & DRINKS", "KUDIX CLUB", "BREWERY TOURS", "BLOG", "PETS @ TOIT"];
+let tabsList = ["BEERS", "FOOD & DRINKS", "KUDIX CLUB"];
 
 //add list of buttons/tabs to menu
 const tabsEl = document.createElement("ul");
