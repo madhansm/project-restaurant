@@ -11,7 +11,6 @@ menuEl.classList.add("menu");
 const logoEl = document.createElement("img");
 logoEl.setAttribute("id", "logo");
 logoEl.src = logo;
-logoEl.addEventListener("click", () => {console.log("logo is clicked")});
 menuEl.appendChild(logoEl);
 
 //list of buttons/tabs to be displayed in the menu
@@ -22,8 +21,13 @@ const tabsEl = document.createElement("ul");
 tabsEl.classList.add("tabs");
 
 //loop to display tabs list array
+let tabsElementList = []; //to export for tab display purposes
+
 tabsList.forEach(tab => {
     let buttonEl = document.createElement("button");
+
+    tabsElementList.push(buttonEl);
+
     let buttonText = document.createTextNode(tab);
     buttonEl.append(buttonText);
     let listEl = document.createElement("li");
@@ -41,6 +45,7 @@ footerEl.href = "https://github.com/madhansm";
 footerEl.setAttribute("id", "footer");
 const footerText = document.createTextNode("github.com/madhansm")
 footerEl.append(footerText);
+
 menuEl.appendChild(footerEl);
 
 //append menu to  content
@@ -49,4 +54,4 @@ contentEl.appendChild(menuEl);
 console.log("landing page executed");
 
 //export content div to index.js
-export default contentEl;
+export {contentEl,tabsElementList};

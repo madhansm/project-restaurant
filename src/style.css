@@ -45,9 +45,9 @@ body {
 }
 
 .landing-tab-background {
-    display: block;
     background: url('less-opaque.png');
     background-repeat: repeat;
+    width: 100vw;
 }
 
 .landing-tab {

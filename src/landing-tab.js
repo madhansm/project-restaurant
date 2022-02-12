@@ -28,8 +28,6 @@ descriptionArray.forEach(description => {
 const seeBeersEl = document.createElement("button");
 seeBeersEl.setAttribute("id", "beers-btn");
 seeBeersEl.innerHTML = "SEE OUR BEERS";
-seeBeersEl.addEventListener("click", () => {console.log("show beers tab")});
-
 
 landingTabEl.appendChild(seeBeersEl);
 

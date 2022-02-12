@@ -1,9 +1,9 @@
-import imgDarkKnight from './beer-dark-knight.jpg';
-import imgColonial from './beer-colonial.jpg';
-import imgRed from './beer-red.jpg';
-import imgWeiss from './beer-weiss.jpg';
-import imgTintin from './beer-tintin.jpg';
-import imgBlonde from './beer-blonde.jpg';
+import imgDarkKnight from './beer-images/beer-dark-knight.jpg';
+import imgColonial from './beer-images/beer-colonial.jpg';
+import imgRed from './beer-images/beer-red.jpg';
+import imgWeiss from './beer-images/beer-weiss.jpg';
+import imgTintin from './beer-images/beer-tintin.jpg';
+import imgBlonde from './beer-images/beer-blonde.jpg';
 
 
 //background
@@ -53,7 +53,6 @@ beerList.push(constructBeerMenu("TINTIN", imgTintin, "A refreshing, Belgian-styl
 beerList.push(constructBeerMenu("BLONDE", imgBlonde, "A light, crisp and refreshing ale"));
 
 //push beer list to DOM
-
 beerList.forEach(beer => {
     
     const beerItemEl = document.createElement("div");
@@ -68,5 +67,7 @@ beerList.forEach(beer => {
 
 //push all to DOM
 backgroundEl.appendChild(beersTabEl);
+
 console.log("beers script executed");
+
 export default backgroundEl;
