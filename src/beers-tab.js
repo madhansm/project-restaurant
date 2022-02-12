@@ -44,7 +44,7 @@ function constructBeerMenu(name, image, description) {
     }
 }
 
-//add beer list to array
+//add beer list to array push new beers here, also import images
 beerList.push(constructBeerMenu ("DARK KNIGHT", imgDarkKnight, "A very dark, full-bodied, roasty, malty ale"));
 beerList.push(constructBeerMenu("COLONIAL", imgColonial, "A bitter, highly hopped, English style ale"));
 beerList.push(constructBeerMenu("RED", imgRed, "A full bodied, Irish red ale"));
